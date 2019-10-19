@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Smart City</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- CSS
+    ================================================== -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body {
+			overflow-x: hidden;
+		}	
+		.banner-2 {
+			width: 100%;
+			height: 60vh;
+			background: url('images/i-design/bg2.jpeg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		.banner-2 .content {
+			/*width: 100%;*/
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			padding-top: 110px;
+			text-align: center;
+			color: #fff;
+			
+		}
+		.content span h2 { font-family: cursive; }
+		.content h1 { margin: 20px; }
+		.content span.icon-chevron-down { margin-top: 20px; }
+		.gallery-part img {
+			width: 100%;
+			border: 2px solid #6cf;
+			border-radius: 4px;
+		}
+		@media (min-width: 768px) {
+			.gallery-part {
+				display: grid;
+				grid-gap: 3rem;
+				grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+				
+			}
+		}
+	</style>
+</head>
+<body>
+<nav>
+	<input type="checkbox" name="" id="" checked="checked">
+	<span class="icon"></span>
+	<nav>
+		<ul class="active">
+			<li class="logo"><h3><span class="icon-dashcube" ></span> SmartCity</h3></li>
+			<li><a href="index.html"><span class="icon-arrow-left"> Back</a></li>
+			<!-- <li><a href="#section-a"><span class="icon-person"> About</a></li> -->
+			<li><a href="#section-b"><span class="icon-image"> Projects</a></li>
+			<!-- <li><a href="#section-c"><span class="icon-comments-o"> Testimonials</a></li -->
+		</ul>
+	</nav>
+</nav>	
+	<section class="banner-2" id="home">
+		<div class="content" data-aos-delay=400 data-aos=fade-right data-aos-easing=ease-in-quad>
+			<span class="icon-dashcube">
+				<h2>Smart City</h2>
+			</span>
+			
+			<h1>Gallery</h1>
+			<span class="icon-chevron-down"></span>
+		</div>
+		<!-- <div class="content-image">
+			<img src="images/i-design/bg3.jpeg" alt="bg3">
+		</div> -->	
+	</section>
+	<div class="site-wrapper">
+		
+		<section id="section-b" class="grid" data-aos-delay=500 data-aos=fade-up data-aos-easing=ease-in-quad>
+			<h3 class="header-title-3">Interior</h3>
+			<h2 class="header-title-2">Gallery</h2>
+			<div class="gallery-part" data-aos-delay=600 data-aos=zoom-up data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-1.jpeg" alt="" data-aos-delay=600 data-aos=slide-right data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-2.jpeg" alt="" data-aos-delay=600 data-aos=slide-up data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-9.jpeg" alt="" data-aos-delay=500 data-aos=slide-left data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-4.jpeg" alt="" data-aos-delay=600 data-aos=slide-up data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-5.jpeg" alt="" data-aos-delay=400 data-aos=slide-right data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-6.jpeg" alt="" data-aos-delay=600 data-aos=slide-up data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-7.jpeg" alt="" data-aos-delay=300 data-aos=slide-left data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-8.jpeg" alt="" data-aos-delay=600 data-aos=slide-up data-aos-easing=ease-in-quad>
+				<img src="images/i-design/i-3.jpeg" alt="" data-aos-delay=200 data-aos=slide-right data-aos-easing=ease-in-quad>
+			</div>
+
+		</section>
+	
+		
+	</div>
+	<footer class="footer-container">
+		<div class="content-wrap-footer">
+			<div class="section-1">
+				<h2 class="logo">Smart City</h2>
+				<p>
+					Smart City is one of the giant architectural company in the globe.
+					Building beautiful cities.
+				</p>
+			</div>
+			<div class="section-2">
+				<h2>Get In Touch</h2>
+				<p>220 320-92-76</p>
+				<p>info@smart-city.com</p>
+				
+					<p>Banjul, The Gambia</p>
+				
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2019 Smart City | All Rights Reserved | Design by Cherno Ibn Muhammad</p>
+		</div>
+	</footer>
+	<!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function () {
+		// $('.hamburger').click(function() {
+		// 	$('.burger').toggleClass('close');
+		// 	$('nav ul').toggleClass('show');
+		// });
+
+		AOS.init({
+			duration: 800,
+			easing: 'slide'
+		});
+		// $(window).scroll(function () {
+		// 	var $w = $(this),
+		// 		st = $w.scrollTop(),
+		// 		navbar = $('nav ul');
+		// 	if (st > 100) {
+		// 		navbar.addClass("active");
+		// 	}else{
+		// 		navbar.removeClass("active");
+		// 	}	
+		// });
+
+    });
+
+    	 
+    </script>
+</body>
+</html>

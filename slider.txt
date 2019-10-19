@@ -1,0 +1,213 @@
+	<!-- Testimonials -->
+		<!-- <section class="testimonials-wrap" >
+            <div class="testimonials-header">
+                <h2 class="h1">What Clients Are Saying.</h2>
+            </div>
+            <div class="testimonials">
+                <div class="w-80 testimonials__slider">
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Tim Cook
+                            <span>CEO, Apple</span>
+                        </div>
+                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
+                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.</p>
+                        
+                    </div>
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                         <div class="testimonials__author">
+                            Sundar Pichai
+                            <span>CEO, Google</span>
+                        </div>
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                       
+                    </div>
+                     <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                         <div class="testimonials__author">
+                            Sundar Pichai
+                            <span>CEO, Google</span>
+                        </div>
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                       
+                    </div> 
+
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__author">
+                            Satya Nadella
+                            <span>CEO, Microsoft</span>
+                        </div>
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                        
+                    </div> 
+                    
+                </div> 
+
+            </div> 
+
+        </section> -->
+        <!-- end testimonials-wrap --> 
+
+
+
+        CSS BELW
+###########################
+
+
+
+/* ===================================================================
+ * # testimonials
+ *
+ * ------------------------------------------------------------------- */
+ .w-80 {
+  width: 80%;
+  margin: 0 auto;
+ }
+.testimonials-header {
+  text-align: center;
+  margin-top: 7.2rem;
+}
+.testimonials-header h2 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  position: relative;
+}
+
+.testimonials {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-top: 4.2rem;
+  /*border-top: 1px solid rgba(0, 0, 0, 0.15);*/
+  position: relative;
+}
+
+.testimonials__slider {
+  position: relative;
+
+}
+.testimonials__slider .slick-slide {
+  outline: none;
+}
+.testimonials__slider .slick-dots {
+  display: block;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 3rem 0 0 0;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.testimonials__slider .slick-dots .slick-active{
+    border-radius: 100%;
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    animation: pulse 0.75s cubic-bezier(0.66, 0, 0, 1) 0s infinite normal none running;
+    box-shadow: rgba(245, 134, 93, 0.6) 0px 0px 0px 0px;
+
+}
+@keyframes pulse { 
+  100% { box-shadow: orange 0px 0px 0px 4px; }
+}
+.testimonials__slider .slick-dots li {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  padding: 9px;
+  cursor: pointer;
+}
+.testimonials__slider .slick-dots li button {
+  display: block;
+  width: 8px;
+  height: 8px;
+  line-height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+.testimonials__slider .slick-dots li button:hover,
+.testimonials__slider .slick-dots li button:focus {
+  outline: none;
+}
+.testimonials__slider .slick-dots li.slick-active button,
+.testimonials__slider .slick-dots li:hover button {
+  background: orange;
+ 
+}
+
+.testimonials__slide {
+  /*position: relative;
+  padding-top: 4.5rem;
+  padding-left: 12rem;
+  padding-right: 3rem;*/
+  box-shadow: 0 14px 18px grey;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background-color: #888;
+  color: #333;
+}
+.testimonials__slide p {
+  font-size: 16px;
+  line-height: 2;
+  padding: 10px;
+}
+/*.testimonials__slide::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 3.9rem;
+  position: absolute;
+  left: calc(7.8rem / 2);
+  top: 0;
+  background-color: #26262626;
+}
+*/
+.testimonials__avatar {
+ margin: 10px auto;
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 50%;
+  border: 1px solid #888;
+  padding: 5px;
+/*  position: absolute;
+  left: 0;
+  top: 4.8rem;
+  outline: none;*/
+}
+
+.testimonials__author {
+  margin-top: 0rem;
+  font-family: "metropolis-bold", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #000000;
+}
+.testimonials__author span {
+  display: block;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgba(85, 85, 85, 0.7);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+
